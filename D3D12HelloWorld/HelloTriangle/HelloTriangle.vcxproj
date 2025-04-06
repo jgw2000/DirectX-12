@@ -134,12 +134,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="D3D12HelloTriangle.h" />
-    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D3D12HelloTriangle.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
