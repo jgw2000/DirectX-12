@@ -5,7 +5,7 @@
 class DXSample
 {
 public:
-	DXSample(int width, int height, std::wstring name);
+	DXSample(UINT width, UINT height, std::wstring name);
 	virtual ~DXSample();
 
 	virtual void OnInit() = 0;
@@ -16,8 +16,8 @@ public:
 	virtual void OnKeyDown(UINT8 key) {}
 	virtual void OnKeyUp(UINT8 key) {}
 
-	int GetWidth() const { return m_width; }
-	int GetHeight() const { return m_height; }
+	UINT GetWidth() const { return m_width; }
+	UINT GetHeight() const { return m_height; }
 	const WCHAR* GetTitle() const { return m_title.c_str(); }
 
 protected:
@@ -26,7 +26,10 @@ protected:
 		IDXGIAdapter1** ppAdapter,
 		bool requestHighPerformanceAdapter = false);
 
-	int m_width;
-	int m_height;
+	UINT m_width;
+	UINT m_height;
+	float m_aspectRatio;
+
+private:
 	std::wstring m_title;
 };
