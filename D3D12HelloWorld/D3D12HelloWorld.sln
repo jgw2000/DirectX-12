@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloWindow", "HelloWindow\HelloWindow.vcxproj", "{243DFB3D-7680-4ED4-9850-921D1B8F68B0}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -11,6 +11,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base", "Base\Base.vcxproj", "{26881F99-0596-4486-9ECF-594E622FCBEE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloTriangle", "HelloTriangle\HelloTriangle.vcxproj", "{F239C55A-C059-4ED8-BA0A-4FD5157C634F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26881F99-0596-4486-9ECF-594E622FCBEE} = {26881F99-0596-4486-9ECF-594E622FCBEE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloTexture", "HelloTexture\HelloTexture.vcxproj", "{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{26881F99-0596-4486-9ECF-594E622FCBEE} = {26881F99-0596-4486-9ECF-594E622FCBEE}
 	EndProjectSection
@@ -47,6 +52,14 @@ Global
 		{F239C55A-C059-4ED8-BA0A-4FD5157C634F}.Release|x64.Build.0 = Release|x64
 		{F239C55A-C059-4ED8-BA0A-4FD5157C634F}.Release|x86.ActiveCfg = Release|Win32
 		{F239C55A-C059-4ED8-BA0A-4FD5157C634F}.Release|x86.Build.0 = Release|Win32
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Debug|x64.ActiveCfg = Debug|x64
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Debug|x64.Build.0 = Debug|x64
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Debug|x86.Build.0 = Debug|Win32
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x64.ActiveCfg = Release|x64
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x64.Build.0 = Release|x64
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x86.ActiveCfg = Release|Win32
+		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

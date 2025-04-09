@@ -15,7 +15,7 @@ int Win32Application::Run(DXSample* pSample, HINSTANCE hInstance, int nCmdShow)
 	wc.lpszClassName = L"DXSampleClass";
 	RegisterClassEx(&wc);
 
-	RECT windowRect = { 0, 0, pSample->GetWidth(), pSample->GetHeight() };
+	RECT windowRect = { 0, 0, static_cast<LONG>(pSample->GetWidth()), static_cast<LONG>(pSample->GetHeight()) };
 	AdjustWindowRect(&windowRect, WS_OVERLAPPEDWINDOW, FALSE);
 
 	// Create the window
