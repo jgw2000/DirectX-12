@@ -218,7 +218,7 @@ void D3D12HelloTexture::LoadAssets()
 	// Create the command list
 	m_device->CreateCommandList(0, D3D12_COMMAND_LIST_TYPE_DIRECT,
 		m_commandAllocator.Get(),
-		nullptr,
+		m_pipelineState.Get(),
 		IID_PPV_ARGS(&m_commandList)
 	);
 

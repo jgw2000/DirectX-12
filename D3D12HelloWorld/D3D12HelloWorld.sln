@@ -20,6 +20,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloTexture", "HelloTextur
 		{26881F99-0596-4486-9ECF-594E622FCBEE} = {26881F99-0596-4486-9ECF-594E622FCBEE}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloConstBuffers", "HelloConstBuffers\HelloConstBuffers.vcxproj", "{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26881F99-0596-4486-9ECF-594E622FCBEE} = {26881F99-0596-4486-9ECF-594E622FCBEE}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -60,6 +65,14 @@ Global
 		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x64.Build.0 = Release|x64
 		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x86.ActiveCfg = Release|Win32
 		{BE0BF996-FDD0-4B62-87E5-271DFD048BD3}.Release|x86.Build.0 = Release|Win32
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Debug|x64.ActiveCfg = Debug|x64
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Debug|x64.Build.0 = Debug|x64
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Debug|x86.Build.0 = Debug|Win32
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Release|x64.ActiveCfg = Release|x64
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Release|x64.Build.0 = Release|x64
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Release|x86.ActiveCfg = Release|Win32
+		{B6ECF6D5-9D90-4D28-8A40-0E44EA19A407}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

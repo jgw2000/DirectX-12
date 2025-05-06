@@ -45,6 +45,11 @@ int Win32Application::Run(DXSample* pSample, HINSTANCE hInstance, int nCmdShow)
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
+		else
+		{
+			pSample->OnUpdate();
+			pSample->OnRender();
+		}
 	}
 
 	pSample->OnDestroy();
@@ -76,14 +81,6 @@ LRESULT CALLBACK Win32Application::WindowProc(HWND hwnd, UINT message, WPARAM wP
 		if (pSample)
 		{
 			pSample->OnKeyUp(static_cast<UINT8>(wParam));
-		}
-		break;
-
-	case WM_PAINT:
-		if (pSample)
-		{
-			pSample->OnUpdate();
-			pSample->OnRender();
 		}
 		break;
 
